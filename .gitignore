@@ -1,6 +1,7 @@
 *.o
 *.gsc
 *.bin
+*.html
 stream_bench
 gsc
 gsc_test
