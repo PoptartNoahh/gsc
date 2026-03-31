@@ -1,4 +1,6 @@
 *.o
-gsc
 *.gsc
 *.bin
+stream_bench
+gsc
+gsc_test

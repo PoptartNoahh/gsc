@@ -1,17 +1,17 @@
 CC      = cc
 CFLAGS  = -O2 -Wall -Wextra -std=c99
-LDFLAGS = -lz -lm
+LDFLAGS = -lz -lm -lpthread
 
-gsc: main.o gsc.o
+stream_bench: stream_bench.o gsc3.o
 	$(CC) -o $@ $^ $(LDFLAGS)
 
-main.o: main.c gsc.h
-	$(CC) $(CFLAGS) -c main.c
+stream_bench.o: stream_bench.c gsc3.h
+	$(CC) $(CFLAGS) -c stream_bench.c
 
-gsc.o: gsc.c gsc.h
-	$(CC) $(CFLAGS) -c gsc.c
+gsc3.o: gsc3.c gsc3.h
+	$(CC) $(CFLAGS) -c gsc3.c
 
 clean:
-	rm -f *.o gsc
+	rm -f *.o stream_bench
 
 .PHONY: clean
