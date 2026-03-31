@@ -53,6 +53,3 @@ while (gsc3_enc_next(enc, &chunk) == 0) {
 }
 gsc3_enc_free(enc);
 ```
-
-## v2
-Single-threaded version is in `v2/`. Same core algorithm, no parallelism or streaming.
