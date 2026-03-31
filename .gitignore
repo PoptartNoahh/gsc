@@ -1,0 +1,4 @@
+*.o
+gsc
+*.gsc
+*.bin
